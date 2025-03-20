@@ -1,0 +1,31 @@
+회원 별 도서 대출 기록 로그 저장
+
+{ 일단 이렇다고 가정 :
+대출 현황 정보 필요 없음
+대출 제한 없음
+반납 완료 해도 또 반납 가능
+같은 책 무한히 대출 가능 - 재고 권수 정보 없음.
+}
+
+서비스 폴더 생성
+logManager 클래스 생성
+logTransaction(String record, String filepath) 메서드 넣기
+
+Book book, Member members 는 아까 Lesson 때 만들어둔 코드 그냥 재활용
+
+스캐너 기능 구현
+회원번호 받기.
+책 제목 받기 (대소문자 정확히)
+반납 및 대출 여부 (True or False_)
+
+람다 -> 이용하여
+책 제목 title 이 제대로 입력됐는지,
+멤버 id 가 제대로 입력 됐는지 확인
+
+StringBuilder 사용
+멤버 id 에 따른 회원 이름 따내기.
+책 제목 사용.
+record string = "회원 000 이 책 000을 대출/반납 하였다"
+
+해당 record 를 파일에 저장.
+
